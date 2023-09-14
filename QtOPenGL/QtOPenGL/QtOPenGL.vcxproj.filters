@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Basic">
+      <UniqueIdentifier>{d3e54cfd-3421-4449-a2da-f84f5cd053a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="MainWindow\ui">
+      <UniqueIdentifier>{edafa67f-f768-4820-97f0-19c11894c691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow\src">
+      <UniqueIdentifier>{889eb4f4-0695-4cc5-9f46-74e2908bd6f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow\include">
+      <UniqueIdentifier>{cf800181-0b4c-4915-942a-d8d3a37cfd33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="QtOPenGL.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basicwidget.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="QtOPenGL.cpp">
+      <Filter>MainWindow\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtOPenGL.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="basicwidget.ui">
+      <Filter>Basic</Filter>
+    </QtUic>
+    <QtUic Include="QtOPenGL.ui">
+      <Filter>MainWindow\ui</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="basicwidget.h">
+      <Filter>Basic</Filter>
+    </QtMoc>
+    <QtMoc Include="QtOPenGL.h">
+      <Filter>MainWindow\include</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
