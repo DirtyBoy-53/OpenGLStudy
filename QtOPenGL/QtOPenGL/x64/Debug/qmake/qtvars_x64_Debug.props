@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
 <Qt_DEFINES_>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_OPENGLEXTENSIONS_LIB;QT_GUI_LIB;QT_CORE_LIB</Qt_DEFINES_>
-<Qt_INCLUDEPATH_>C:\Users\gd11367-hlw\AppData\Local\Temp\mawsz4vj.yd0;F:\Computer\Qt\5.15.2\msvc2019_64\include;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtOpenGL;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtWidgets;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtOpenGLExtensions;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtGui;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtANGLE;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Users\gd11367-hlw\AppData\Local\Temp\mawsz4vj.yd0;/include;F:\Computer\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
+<Qt_INCLUDEPATH_>C:\Users\gd11367-hlw\AppData\Local\Temp\fk1u41ws.d2i;F:\Computer\Qt\5.15.2\msvc2019_64\include;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtOpenGL;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtWidgets;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtOpenGLExtensions;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtGui;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtANGLE;F:\Computer\Qt\5.15.2\msvc2019_64\include\QtCore;C:\Users\gd11367-hlw\AppData\Local\Temp\fk1u41ws.d2i;/include;F:\Computer\Qt\5.15.2\msvc2019_64\mkspecs\win32-msvc</Qt_INCLUDEPATH_>
 <Qt_STDCPP_></Qt_STDCPP_>
 <Qt_RUNTIME_>MultiThreadedDebugDLL</Qt_RUNTIME_>
 <Qt_CL_OPTIONS_>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus</Qt_CL_OPTIONS_>

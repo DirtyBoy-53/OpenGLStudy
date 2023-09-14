@@ -1,4 +1,8 @@
-﻿  QtOPenGL.cpp
+﻿  Reading Qt configuration (F:/Computer/Qt/5.15.2/msvc2019_64/bin/qmake)
+  basicwidget.cpp
+  QtOPenGL.cpp
   main.cpp
+  qrc_QtOPenGL.cpp
   moc_QtOPenGL.cpp
+  moc_basicwidget.cpp
   QtOPenGL.vcxproj -> D:\Software\VS2022\OPenGL_Study\QtOPenGL\x64\Debug\QtOPenGL.exe
