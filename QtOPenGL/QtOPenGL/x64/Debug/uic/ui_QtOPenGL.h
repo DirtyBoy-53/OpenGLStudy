@@ -38,7 +38,7 @@ public:
     {
         if (QtOPenGLClass->objectName().isEmpty())
             QtOPenGLClass->setObjectName(QString::fromUtf8("QtOPenGLClass"));
-        QtOPenGLClass->resize(882, 691);
+        QtOPenGLClass->resize(882, 555);
         centralWidget = new QWidget(QtOPenGLClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         horizontalLayout = new QHBoxLayout(centralWidget);

@@ -25,6 +25,15 @@
       <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
       <Extensions>ts</Extensions>
     </Filter>
+    <Filter Include="Basic\include">
+      <UniqueIdentifier>{f11ee7ec-af23-4f01-b5ff-dc4191867b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basic\src">
+      <UniqueIdentifier>{359a4561-cc8a-4576-887f-94c2f8357380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basic\ui">
+      <UniqueIdentifier>{991443e9-2b6c-4783-a02a-964349c0616c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="QtOPenGL.qrc">
@@ -32,14 +41,20 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basicwidget.cpp">
-      <Filter>Basic</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>MainWindow\src</Filter>
     </ClCompile>
     <ClCompile Include="QtOPenGL.cpp">
       <Filter>MainWindow\src</Filter>
+    </ClCompile>
+    <ClCompile Include="basicwidget.cpp">
+      <Filter>Basic\src</Filter>
+    </ClCompile>
+    <ClCompile Include="gltriangle.cpp">
+      <Filter>Basic\src</Filter>
+    </ClCompile>
+    <ClCompile Include="glrectangle.cpp">
+      <Filter>Basic\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -48,24 +63,30 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="basicwidget.ui">
-      <Filter>Basic</Filter>
-    </QtUic>
     <QtUic Include="QtOPenGL.ui">
       <Filter>MainWindow\ui</Filter>
     </QtUic>
+    <QtUic Include="basicwidget.ui">
+      <Filter>Basic\ui</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="basicwidget.h">
-      <Filter>Basic</Filter>
-    </QtMoc>
     <QtMoc Include="QtOPenGL.h">
       <Filter>MainWindow\include</Filter>
+    </QtMoc>
+    <QtMoc Include="basicwidget.h">
+      <Filter>Basic\include</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gltriangle.h">
+      <Filter>Basic\include</Filter>
+    </ClInclude>
+    <ClInclude Include="glrectangle.h">
+      <Filter>Basic\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

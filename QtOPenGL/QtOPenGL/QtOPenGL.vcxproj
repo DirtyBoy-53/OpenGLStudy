@@ -20,7 +20,7 @@
     <ProjectGuid>{15AF97EE-CDD8-44EE-B6C7-7F72912D1BD0}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
-    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -64,6 +64,11 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\QtGui;$(QTDIR)\QtANGLE;$(QTDIR)\QtCore;$(QTDIR)\mkspecs\win32-msvc;.;.\QtOPenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
@@ -94,11 +99,15 @@
     <QtUic Include="QtOPenGL.ui" />
     <QtMoc Include="QtOPenGL.h" />
     <ClCompile Include="basicwidget.cpp" />
+    <ClCompile Include="glrectangle.cpp" />
+    <ClCompile Include="gltriangle.cpp" />
     <ClCompile Include="QtOPenGL.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="basicwidget.h" />
+    <ClInclude Include="glrectangle.h" />
+    <ClInclude Include="gltriangle.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

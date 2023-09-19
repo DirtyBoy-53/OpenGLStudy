@@ -11,9 +11,12 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QWidget>
+#include "glrectangle.h"
+#include "gltriangle.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -22,7 +25,10 @@ class Ui_BasicWidgetClass
 public:
     QHBoxLayout *horizontalLayout;
     QTabWidget *tabWidget;
-    QWidget *tab;
+    QWidget *pageTriangle;
+    QGridLayout *gridLayout;
+    GLRectangle *openGLWidget_2;
+    GLTriangle *openGLWidget_1;
     QWidget *tab_3;
     QWidget *tab_2;
 
@@ -30,16 +36,30 @@ public:
     {
         if (BasicWidgetClass->objectName().isEmpty())
             BasicWidgetClass->setObjectName(QString::fromUtf8("BasicWidgetClass"));
-        BasicWidgetClass->resize(638, 516);
+        BasicWidgetClass->resize(646, 544);
         horizontalLayout = new QHBoxLayout(BasicWidgetClass);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         tabWidget = new QTabWidget(BasicWidgetClass);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tab = new QWidget();
-        tab->setObjectName(QString::fromUtf8("tab"));
-        tabWidget->addTab(tab, QString());
+        pageTriangle = new QWidget();
+        pageTriangle->setObjectName(QString::fromUtf8("pageTriangle"));
+        gridLayout = new QGridLayout(pageTriangle);
+        gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        openGLWidget_2 = new GLRectangle(pageTriangle);
+        openGLWidget_2->setObjectName(QString::fromUtf8("openGLWidget_2"));
+
+        gridLayout->addWidget(openGLWidget_2, 0, 1, 1, 1);
+
+        openGLWidget_1 = new GLTriangle(pageTriangle);
+        openGLWidget_1->setObjectName(QString::fromUtf8("openGLWidget_1"));
+
+        gridLayout->addWidget(openGLWidget_1, 0, 0, 1, 1);
+
+        tabWidget->addTab(pageTriangle, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QString::fromUtf8("tab_3"));
         tabWidget->addTab(tab_3, QString());
@@ -61,7 +81,7 @@ public:
     void retranslateUi(QWidget *BasicWidgetClass)
     {
         BasicWidgetClass->setWindowTitle(QCoreApplication::translate("BasicWidgetClass", "BasicWidget", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("BasicWidgetClass", "\345\237\272\346\234\254\345\275\242\347\212\266", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(pageTriangle), QCoreApplication::translate("BasicWidgetClass", "\345\237\272\346\234\254\345\275\242\347\212\266", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("BasicWidgetClass", "\347\272\271\347\220\206", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("BasicWidgetClass", "\346\227\213\350\275\254\345\271\263\347\247\273", nullptr));
     } // retranslateUi
