@@ -22,16 +22,16 @@ void GLTriangle::initializeGL()
 	initializeOpenGLFunctions();
 
 	const char* vertex_str = R"(#version 450
-layout (location = 0) in vec3 vertices;
-void main(){
-gl_Position = vec4(vertices,1.0);})";
+	layout (location = 0) in vec3 vertices;
+	void main(){
+	gl_Position = vec4(vertices,1.0);})";
 
 	const char* fragment_str = R"(#version 450
-uniform vec3 myColor;
-out vec4 fragColor;
-void main(){
-fragColor = vec(myColor,1.0);
-})";
+	uniform vec3 myColor;
+	out vec4 fragColor;
+	void main(){
+	fragColor = vec4(myColor,1.0);
+	})";
 
 	GLuint vertex_shader = glCreateShader(GL_VERTEX_SHADER);
 	GLuint fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);

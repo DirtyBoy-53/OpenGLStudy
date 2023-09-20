@@ -42,7 +42,7 @@
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>msvc2019_64</QtInstall>
+    <QtInstall>msvc2015_64</QtInstall>
     <QtModules>core;opengl;gui;widgets;openglextensions</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
