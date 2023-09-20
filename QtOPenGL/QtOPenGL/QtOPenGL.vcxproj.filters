@@ -34,6 +34,18 @@
     <Filter Include="Basic\ui">
       <UniqueIdentifier>{991443e9-2b6c-4783-a02a-964349c0616c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{f7fa5904-0051-4eea-b12a-9f5793775e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\include">
+      <UniqueIdentifier>{8e5c808f-9579-48e0-9473-ac4d1751ac37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\src">
+      <UniqueIdentifier>{2c3898ab-bdd2-4ac8-90d1-85d81ebcc36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other\ui">
+      <UniqueIdentifier>{e1fc852a-4b19-475a-ae42-12f018e207aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="QtOPenGL.qrc">
@@ -54,6 +66,9 @@
       <Filter>Basic\src</Filter>
     </ClCompile>
     <ClCompile Include="glrectangle.cpp">
+      <Filter>Basic\src</Filter>
+    </ClCompile>
+    <ClCompile Include="gltexture.cpp">
       <Filter>Basic\src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -86,6 +101,9 @@
       <Filter>Basic\include</Filter>
     </ClInclude>
     <ClInclude Include="glrectangle.h">
+      <Filter>Basic\include</Filter>
+    </ClInclude>
+    <ClInclude Include="gltexture.h">
       <Filter>Basic\include</Filter>
     </ClInclude>
   </ItemGroup>

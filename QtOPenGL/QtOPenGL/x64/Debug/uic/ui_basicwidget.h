@@ -13,9 +13,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QOpenGLWidget>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QWidget>
 #include "glrectangle.h"
+#include "gltexture.h"
 #include "gltriangle.h"
 
 QT_BEGIN_NAMESPACE
@@ -30,6 +32,9 @@ public:
     GLRectangle *openGLWidget_2;
     GLTriangle *openGLWidget_1;
     QWidget *tab_3;
+    QGridLayout *gridLayout_2;
+    GLTexture *openGLWidget_3;
+    QOpenGLWidget *openGLWidget_4;
     QWidget *tab_2;
 
     void setupUi(QWidget *BasicWidgetClass)
@@ -62,6 +67,20 @@ public:
         tabWidget->addTab(pageTriangle, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QString::fromUtf8("tab_3"));
+        gridLayout_2 = new QGridLayout(tab_3);
+        gridLayout_2->setSpacing(6);
+        gridLayout_2->setContentsMargins(11, 11, 11, 11);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        openGLWidget_3 = new GLTexture(tab_3);
+        openGLWidget_3->setObjectName(QString::fromUtf8("openGLWidget_3"));
+
+        gridLayout_2->addWidget(openGLWidget_3, 0, 0, 1, 1);
+
+        openGLWidget_4 = new QOpenGLWidget(tab_3);
+        openGLWidget_4->setObjectName(QString::fromUtf8("openGLWidget_4"));
+
+        gridLayout_2->addWidget(openGLWidget_4, 0, 1, 1, 1);
+
         tabWidget->addTab(tab_3, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -72,7 +91,7 @@ public:
 
         retranslateUi(BasicWidgetClass);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(BasicWidgetClass);

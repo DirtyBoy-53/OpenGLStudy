@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="pageTriangle">
       <attribute name="title">
@@ -36,6 +36,14 @@
       <attribute name="title">
        <string>纹理</string>
       </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="GLTexture" name="openGLWidget_3"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QOpenGLWidget" name="openGLWidget_4"/>
+       </item>
+      </layout>
      </widget>
      <widget class="QWidget" name="tab_2">
       <attribute name="title">
@@ -57,6 +65,11 @@
    <class>GLRectangle</class>
    <extends>QOpenGLWidget</extends>
    <header>glrectangle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GLTexture</class>
+   <extends>QOpenGLWidget</extends>
+   <header>gltexture.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
