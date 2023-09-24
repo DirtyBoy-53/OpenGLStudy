@@ -13,11 +13,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QOpenGLWidget>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QWidget>
 #include "glrectangle.h"
 #include "gltexture.h"
+#include "gltextureunit.h"
 #include "gltriangle.h"
 
 QT_BEGIN_NAMESPACE
@@ -34,7 +34,7 @@ public:
     QWidget *tab_3;
     QGridLayout *gridLayout_2;
     GLTexture *openGLWidget_3;
-    QOpenGLWidget *openGLWidget_4;
+    GLTextureUnit *openGLWidget_4;
     QWidget *tab_2;
 
     void setupUi(QWidget *BasicWidgetClass)
@@ -76,7 +76,7 @@ public:
 
         gridLayout_2->addWidget(openGLWidget_3, 0, 0, 1, 1);
 
-        openGLWidget_4 = new QOpenGLWidget(tab_3);
+        openGLWidget_4 = new GLTextureUnit(tab_3);
         openGLWidget_4->setObjectName(QString::fromUtf8("openGLWidget_4"));
 
         gridLayout_2->addWidget(openGLWidget_4, 0, 1, 1, 1);

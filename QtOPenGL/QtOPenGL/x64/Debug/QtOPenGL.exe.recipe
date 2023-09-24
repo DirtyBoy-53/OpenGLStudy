@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Software\VS2022\OPenGL_Study\OpenGLStudy\QtOPenGL\x64\Debug\QtOPenGL.exe</FullPath>
+      <FullPath>D:\CompileData\VS_Data\OpenGLStudy\QtOPenGL\x64\Debug\QtOPenGL.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

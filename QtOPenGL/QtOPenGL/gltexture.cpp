@@ -21,24 +21,24 @@ void GLTexture::initializeGL()
 {
 	initializeOpenGLFunctions();
 	const char* vertex_str = R"(#version 450
-layout(location = 0) in vec3 inPos;
-layout(location = 1) in vec3 inColor;
-layout(location = 2) in vec2 inTexCoord;
-out vec3 theColor;
-out vec2 texCoord;
-void main() {
-gl_Position = vec4(inPos,1.0);
-theColor = inColor;
-texCoord = vec2(inTexCoord.x, 1-inTexCoord.y);
-})";
+	layout(location = 0) in vec3 inPos;
+	layout(location = 1) in vec3 inColor;
+	layout(location = 2) in vec2 inTexCoord;
+	out vec3 theColor;
+	out vec2 texCoord;
+	void main() {
+		gl_Position = vec4(inPos,1.0);
+		theColor = inColor;
+		texCoord = vec2(inTexCoord.x, 1-inTexCoord.y);
+	})";
 	const char* fragment_str = R"(#version 450
-uniform sampler2D theTexture;
-in vec3 theColor;
-in vec2 texCoord;
-out vec4 fragColor;
-void main() {
-fragColor = texture(theTexture, texCoord) * vec4(theColor, 1.0);
-})";
+	uniform sampler2D theTexture;
+	in vec3 theColor;
+	in vec2 texCoord;
+	out vec4 fragColor;
+	void main() {
+		fragColor = texture(theTexture, texCoord) * vec4(theColor, 1.0);
+	})";
 	GLuint vertex_shader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertex_shader, 1, &vertex_str, NULL);
 	glCompileShader(vertex_shader);
@@ -87,6 +87,7 @@ fragColor = texture(theTexture, texCoord) * vec4(theColor, 1.0);
 	glCreateBuffers(1, &ebo);
 	glNamedBufferStorage(ebo, sizeof(indices), indices, GL_DYNAMIC_STORAGE_BIT);
 	glVertexArrayElementBuffer(vao, ebo);
+
 	QImage img(":/Image/awesomeface.png");
 	img.convertToFormat(QImage::Format_RGB888);
 	glCreateTextures(GL_TEXTURE_2D, 1, &texture);
