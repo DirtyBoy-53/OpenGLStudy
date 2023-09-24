@@ -92,6 +92,7 @@ void GLTextureUnit::initializeGL()
     texture1->setWrapMode(QOpenGLTexture::Repeat);
     texture1->setMinificationFilter(QOpenGLTexture::Linear);
     texture1->setMagnificationFilter(QOpenGLTexture::Linear);
+
     texture2 = new QOpenGLTexture(QImage(":/Image/awesomeface.png"), QOpenGLTexture::GenerateMipMaps);
     if (!texture2->isCreated()) {
         qDebug() << "Failed to load texture2";
@@ -110,12 +111,13 @@ void GLTextureUnit::paintGL()
 {
     glClearColor(0.2f, 0.3f, 0.4f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+
     glActiveTexture(GL_TEXTURE0);
-
     texture1->bind();
-    glActiveTexture(GL_TEXTURE1);
 
+    glActiveTexture(GL_TEXTURE1);
     texture2->bind();
+
     shaderProgram.bind();
     vao.bind();
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);

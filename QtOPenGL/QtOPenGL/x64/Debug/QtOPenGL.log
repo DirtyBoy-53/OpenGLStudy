@@ -1,14 +1,2 @@
-﻿  moc QtOPenGL.h
-  moc basicwidget.h
-  basicwidget.cpp
-  glrectangle.cpp
-  gltexture.cpp
-  gltextureunit.cpp
-  gltriangle.cpp
-  QtOPenGL.cpp
-D:\CompileData\VS_Data\OpenGLStudy\QtOPenGL\QtOPenGL\gltexture.cpp(92,21): warning C4834: 放弃具有 "nodiscard" 属性的函数的返回值
-  main.cpp
-  qrc_QtOPenGL.cpp
-  moc_QtOPenGL.cpp
-  moc_basicwidget.cpp
+﻿  gltransform.cpp
   QtOPenGL.vcxproj -> D:\CompileData\VS_Data\OpenGLStudy\QtOPenGL\x64\Debug\QtOPenGL.exe

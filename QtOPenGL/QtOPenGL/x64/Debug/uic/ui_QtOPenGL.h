@@ -38,7 +38,7 @@ public:
     {
         if (QtOPenGLClass->objectName().isEmpty())
             QtOPenGLClass->setObjectName(QString::fromUtf8("QtOPenGLClass"));
-        QtOPenGLClass->resize(882, 555);
+        QtOPenGLClass->resize(1110, 669);
         centralWidget = new QWidget(QtOPenGLClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         horizontalLayout = new QHBoxLayout(centralWidget);
@@ -59,7 +59,7 @@ public:
         QtOPenGLClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(QtOPenGLClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 882, 23));
+        menuBar->setGeometry(QRect(0, 0, 1110, 23));
         QtOPenGLClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(QtOPenGLClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));

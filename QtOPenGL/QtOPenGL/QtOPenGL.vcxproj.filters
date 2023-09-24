@@ -58,6 +58,9 @@
     <ClCompile Include="gltextureunit.cpp">
       <Filter>源文件\Basic</Filter>
     </ClCompile>
+    <ClCompile Include="gltransform.cpp">
+      <Filter>源文件\Basic</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="QtOPenGL.rc">
@@ -94,6 +97,9 @@
       <Filter>头文件\Basic</Filter>
     </ClInclude>
     <ClInclude Include="gltextureunit.h">
+      <Filter>头文件\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="gltransform.h">
       <Filter>头文件\Basic</Filter>
     </ClInclude>
   </ItemGroup>

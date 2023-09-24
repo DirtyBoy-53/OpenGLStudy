@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="pageTriangle">
       <attribute name="title">
@@ -49,6 +49,31 @@
       <attribute name="title">
        <string>旋转平移</string>
       </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="GLTransform" name="openGLWidget"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>坐标</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QOpenGLWidget" name="openGLWidget_5"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>相机</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QOpenGLWidget" name="openGLWidget_6"/>
+       </item>
+      </layout>
      </widget>
     </widget>
    </item>
@@ -75,6 +100,11 @@
    <class>GLTextureUnit</class>
    <extends>QOpenGLWidget</extends>
    <header>gltextureunit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GLTransform</class>
+   <extends>QOpenGLWidget</extends>
+   <header>gltransform.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
